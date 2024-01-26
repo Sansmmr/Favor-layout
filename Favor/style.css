@@ -1,0 +1,845 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header_content {
+    width: 100%;
+
+    height: 85px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    margin: 0;
+}
+
+.main-header_logo {
+    width: 80px;
+}
+
+.main-header_nav a {
+    margin-right: 35px;
+}
+
+.main-header_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header_nav a {
+    text-decoration: none;
+    color: #292929;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.col-123 {
+    display: flex;
+    margin-right: 250px;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    margin-right: 35px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-header_content a {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.mail {
+    margin-right: 23px;
+}
+
+.sec {
+    display: flex;
+}
+
+.sec-bg {
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    /* Растянуть фон на всю секцию */
+    height: 100vh;
+    /* Высота секции равна высоте экрана (viewport height) */
+    display: flex;
+    align-items: center;
+}
+
+.txtbez {
+
+    color: #FFF;
+
+    font-size: 72px;
+
+}
+
+.text-red {
+    color: #DE0000;
+}
+
+.ua {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 32px;
+}
+
+.tm {
+    margin-top: 20px;
+}
+
+.sec-1-2 .controls {
+    margin-top: 125px;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 23px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #FFF;
+    box-shadow: 0px 2px 9px 3px rgba(255, 255, 255, 0.25);
+    color: #DE0000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.white {
+    width: 417px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 9px 3px rgba(255, 255, 255, 0.25);
+    margin-left: 512px;
+    margin-top: 125px;
+}
+
+.redt {
+    color: #DE0000;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 520px;
+    margin-top: -45px;
+
+}
+
+/* /////перша секція */
+.sec-1 {
+    padding: 90px 0;
+}
+
+.sec-1 .title {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+
+}
+
+.col-33 {
+    width: 33.33%;
+    margin-bottom: 50px;
+}
+
+.col-auto {
+    text-align: center;
+    margin-bottom: 32px;
+
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+.r1 {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.r1>div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.t1 {
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.t2 {
+    font-size: 18px;
+}
+
+.r2 .mar-left {
+    margin-left: 20px;
+}
+
+
+.t3 {
+    font-size: 22px;
+}
+
+
+.row_r1 {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+
+}
+
+.row_r1>div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.r1 .col-25 {
+    width: 25%;
+    margin-bottom: 55px;
+
+}
+
+.r2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.recs {
+    width: 256px;
+    height: 6px;
+    flex-shrink: 0;
+    background: #DE0000;
+
+}
+
+.r1 .col-25 img {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.col-25 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* второй ряд */
+
+.input-text {
+    width: 100%;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.90);
+    border: 1px solid transparent;
+    outline: none;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 18px;
+    font-size: 18px;
+    margin-bottom: 13px;
+}
+
+.input-text::-webkit-input-placeholder,
+.input-text::-webkit-input-placeholder {
+    color: #8F8F8F
+}
+
+.input-text::-moz-placeholder,
+.input-text::-moz-placeholder {
+    color: #8F8F8F
+}
+
+.input-text:-ms-input-placeholder,
+.input-text:-ms-input-placeholder {
+    color: #8F8F8F
+}
+
+/* формочка */
+.sec-3 {
+    background: #DE0000;
+    color: #FFF;
+    padding: 60px 0;
+}
+
+.sec-3 .pozv {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sec-3 .t2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.sec-3 .mar {
+    margin-left: -199px;
+}
+
+.sec-3 .rw {
+    text-align: center;
+    margin-top: 31px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 9px 3px rgba(255, 255, 255, 0.25);
+}
+
+.sec-3 .pozv .form-group input[type="tel"]::before,
+.sec-3 .pozv .form-group input[type="email"]::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-color: #007bff;
+    /* Колір прямокутників заднього плану */
+    top: 50%;
+    /* Вертикально посередині поля */
+    transform: translateY(-50%);
+    left: -50px;
+    /* Позиція лівого прямокутника для поля "телефон" */
+}
+
+.sec-3 .pozv .form-group input[type="tel"]::after,
+.sec-3 .pozv .form-group input[type="email"]::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-color: #007bff;
+    /* Колір прямокутників заднього плану */
+    top: 50%;
+    /* Вертикально посередині поля */
+    transform: translateY(-50%);
+    right: -50px;
+    /* Позиція правого прямокутника для поля "Email" */
+}
+
+
+
+.sec-3 .title {
+    text-align: center;
+    margin-bottom: 41px;
+}
+
+.sec-3 .r4 {
+    display: flex;
+    width: 100%;
+
+}
+
+.sec-3 .r5 {
+    display: flex;
+}
+
+.sec-3 .col-50 {
+    width: 50%;
+}
+
+
+
+
+/* четверта секція */
+
+.sec-4 {
+    padding: 80px 0;
+}
+
+.sec-4 .title {
+    margin-top: 83px;
+    ;
+    color: #242424;
+
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.sec-4 .r6 {
+    display: flex;
+    flex-direction: row;
+}
+
+.sec-4 .col20 {
+    width: 20%;
+}
+
+.sec-4 .cartt {
+    text-align: left;
+}
+
+.sec-4 .txtt {
+    margin-right: 35px;
+    text-align: right;
+    margin-top: -63px;
+    color: #242424;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sec-4 .cartt1 {
+    text-align: left;
+    margin-top: 100;
+}
+
+.sec-4 .txtt1 {
+    margin-right: 30px;
+    text-align: right;
+    margin-top: -63px;
+    color: #242424;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sec-4 .txtt3 {
+    margin-right: 12px;
+    text-align: right;
+    margin-top: -79px;
+    color: #242424;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sec-4 .txtt5 {
+    margin-right: 149px;
+    text-align: right;
+    margin-top: -79px;
+    color: #242424;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sec-4 .recs {
+
+    width: 256px;
+    height: 6px;
+    flex-shrink: 0;
+    background: #DE0000;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+
+/* 5 секція */
+
+.sec-5 {
+    background: #DE0000;
+    color: #FFF;
+    padding: 80px 0;
+}
+
+.sec-5 .title {
+    color: #FFF;
+
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.sec-5 .recs {
+    width: 256px;
+    height: 6px;
+    flex-shrink: 0;
+
+    background: #000;
+    margin-bottom: 63px;
+}
+
+.sec-5 .r7 {
+    display: flex;
+    width: 100%;
+}
+
+.sec-5 .col20 {
+    width: 20%;
+}
+
+.sec-5 .txtxa {
+    text-align: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.sec-5 .txtm {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec-5 .iconochka {
+    margin-bottom: 21px;
+    text-align: center;
+}
+
+.sec-5 .iconochka img {
+    max-width: 87px;
+}
+
+/* перша іконка */
+
+
+
+
+.sec-5 .txtxa2 {
+    text-align: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.sec-5 .txtm2 {
+    text-align: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec-5 .iconochka2 {
+    margin-bottom: 39px;
+    text-align: center;
+    width: 100%;
+}
+
+.sec-5 .iconochka2 img {
+    max-width: 69px;
+}
+
+
+
+
+.sec-5 .txtxa3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.sec-5 .txtm3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec-5 .iconochka3 {
+    margin-bottom: 29px;
+    text-align: center;
+}
+
+
+.sec-5 .iconochka3 img {
+    max-width: 78px;
+}
+
+
+.sec-5 .txtxa4 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.sec-5 .txtm4 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec-5 .iconochka4 {
+    margin-bottom: 38px;
+    text-align: center;
+    width: 100%;
+}
+
+.sec-5 .iconochka4 img {
+    max-width: 69px;
+}
+
+
+.sec-5 .txtxa5 {
+    text-align: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sec-5 .txtm5 {
+    text-align: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec-5 .iconochka5 {
+    margin-bottom: 37px;
+    text-align: center;
+    width: 100%;
+}
+
+.sec-5 .iconochka5 img {
+    max-width: 69px;
+}
+
+/* footer */
+
+
+
+
+
+
+
+.sec-1-2 .r2 .txt2 {
+    font-size: 15px;
+}
+
+.sec-1-2 .r2 {
+    align-items: center;
+}
+
+.lastf {
+    padding: 78px 0;
+    background: #242424;
+}
+
+.lastf .r8 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.lastf .col-355 {
+    width: 35%;
+    margin: 0 auto; 
+}
+
+.lastf .contacts {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.lastf .recs{
+    width: 256px;
+    flex-shrink: 0;
+    background: #DE0000;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+.lastf .r2 {
+    margin-bottom: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.lastf .r2 .col2-1 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-basis: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.lastf .col2-1 img {
+    text-align: left;
+    width: 25px;
+}
+.lastf .r2 .mapochka {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-basis: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.lastf .mapochka img {
+    text-align: left;
+    width: 17px;
+}
+.lastf .r2 .txt2 {
+    color: #FFF;
+
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.lastf .col-40{
+    width: 40%;
+    text-align: center;
+}
+.lastf .col-40 .logo_f {
+   margin-bottom: 30px;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+.lastf .col-40 .logo_f img{
+    width: 202px;
+}
+.lastf .bttt{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+   
+    height: 100%; 
+}
+.lastf .col-355 .btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 23px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #FFF;
+    box-shadow: 0px 2px 9px 3px rgba(255, 255, 255, 0.25);
+    color: #DE0000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.lastf .ikonkiarrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lastf .vector{
+    margin-top: 50px;
+    width: 1274.5px;
+    height: 2px;
+    background:#FFF
+}
+.prava{
+    margin-top: 20px;
+    color: #FFF;
+
+font-family: Roboto;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 115%;
+}
